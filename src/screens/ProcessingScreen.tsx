@@ -47,7 +47,7 @@ export function ProcessingScreen() {
   const [logs, setLogs] = useState<string[]>([]);
   const [end, setEnd] = useState(false);
 
-  const { fileList } = useContext(FileListContext);
+  const { fileList, setFileList } = useContext(FileListContext);
 
   const logScreenRef = useRef<HTMLDivElement>(null);
 
@@ -103,6 +103,7 @@ export function ProcessingScreen() {
       }
 
       setEnd(true);
+      setFileList([]);
     })();
   }, []);
 
