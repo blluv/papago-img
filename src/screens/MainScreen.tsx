@@ -94,7 +94,9 @@ export function MainScreen() {
             setFileList((current) => [...current, ...Array.from<File>(e.dataTransfer?.files).filter((file) => allowFileExts.includes(extractFileExtension(file.name)))]);
           }}
         >
-          <DropText>파일을 여기에 드롭해주세요</DropText>
+          <DropText>
+            파일을 여기에 드롭해주세요<br></br>(jpg, jpeg, png)
+          </DropText>
         </DropArea>
 
         <RightPanel>
