@@ -92,8 +92,6 @@ export function MainScreen() {
           onDrop={(e) => {
             e.preventDefault();
             setFileList((current) => [...current, ...Array.from<File>(e.dataTransfer?.files).filter((file) => allowFileExts.includes(extractFileExtension(file.name)))]);
-
-            // console.log(translatePapago("", "ko", e.dataTransfer?.files[0], true).then((res) => console.log(res)));
           }}
         >
           <DropText>파일을 여기에 드롭해주세요</DropText>

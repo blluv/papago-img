@@ -11,6 +11,7 @@ import asyncPool from "tiny-async-pool";
 import { translatePapago } from "../papago";
 import { writeBinaryFile } from "@tauri-apps/api/fs";
 import forge from "node-forge";
+
 const MainContainer = styled(Container)`
   display: flex;
   width: 100%;
