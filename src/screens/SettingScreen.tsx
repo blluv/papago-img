@@ -1,19 +1,14 @@
 import { open } from "@tauri-apps/api/dialog";
 import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Select, { StylesConfig } from "react-select";
-import { AlertModal } from "../components/AlertModal";
 import { ButtonGroup } from "../components/ButtonGroup";
 import { NoButton, OkButton } from "../components/Buttons";
 import { Container } from "../components/Container";
 import { PageTransition } from "../components/PageAnimator";
 import { SelectLanguage } from "../components/SelectLanguage";
 import { languages } from "../constants";
-import { useAlertModalState } from "../hooks/useAlertModalState";
 
 export function SettingScreen() {
-  const [modalState, setModalState] = useAlertModalState();
-
   const [source, setSource] = useState("");
   const [target, setTarget] = useState("");
 

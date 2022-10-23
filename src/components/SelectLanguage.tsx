@@ -1,4 +1,4 @@
-import Select, { ActionMeta, StylesConfig } from "react-select";
+import Select, { StylesConfig } from "react-select";
 import { Language } from "../interfaces/Language";
 
 const selectStyle: StylesConfig = {

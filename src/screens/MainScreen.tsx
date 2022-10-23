@@ -11,7 +11,6 @@ import { FileListContext } from "../contexts/FileListContext";
 import { useNavigate } from "react-router-dom";
 import { extractFileExtension } from "../utils/fileUtils";
 import { allowFileExts } from "../constants";
-import { translatePapago } from "../papago";
 
 const MainContainer = styled(Container)`
   display: flex;
